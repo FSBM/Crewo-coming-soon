@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        #spline{
+            width: 100vw !important;
+            height: 100vh !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #logo{
+            display: none !important;
+            width: 0px !important;
+            height: 0px !important;
+        }
+        a{
+            display: none !important;
+            width: 0px !important;
+            height: 0px !important; 
+            display: none !important;
+        }
+        .spline-container{
+            width: 120% !important;
+            height: 120% !important;
+        }
+        canvas{
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+        @media screen and (max-width: 600px) {  
+
+            .spline-container{
+                width: 110% !important;
+                height: 120% !important;
+            }
+            canvas{
+                width: 100vw !important;
+                height: 100vh !important;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="spline">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/wGbqxqOuAmcd1mkI/scene.splinecode" class="spline-container"></spline-viewer>
+    </div>
+</body>
+</html>
